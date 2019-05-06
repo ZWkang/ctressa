@@ -60,7 +60,7 @@ hope.prototype = {
         this.assert(
             true === this.ctressa,
             '希望 '+ inspect(this.ctressa) + '为真值',
-            '希望 '+ inspect(this.ctressa) + '不为真值',
+            '希望 '+ inspect(this.ctressa) + '不为真值'
         )
     },
     get is() {
@@ -84,7 +84,7 @@ hope.prototype = {
         this.assert(
             this.expected.test(this.ctressa),
             'HOPE  正则对象' + inspect(this.expected) + ' 与 ' + inspect(this.ctressa) + ' 成功匹配',
-            'HOPE  正则对象' + inspect(this.expected) + ' 与 ' + inspect(this.ctressa) + ' 成功不匹配',
+            'HOPE  正则对象' + inspect(this.expected) + ' 与 ' + inspect(this.ctressa) + ' 成功不匹配'
         )
     },
     get strict() {
@@ -118,7 +118,7 @@ hope.prototype = {
         this.assert(
             this.ctressa === this.expected,
             'HOPE ' + inspect(this.ctressa) + ' 与 ' + inspect(this.expected) + "两者严格相等",
-            'HOPE ' + inspect(this.ctressa) + ' 与 ' + inspect(this.expected) + "两者不严格相等",
+            'HOPE ' + inspect(this.ctressa) + ' 与 ' + inspect(this.expected) + "两者不严格相等"
         )
         return this;
     },
@@ -178,7 +178,7 @@ hope.prototype = {
                 stackStartFn: this.assert,
                 actual: inspect(this.ctressa),
                 expected: expected,
-                showDiff: true,
+                showDiff: true
             })
         }
 
@@ -262,7 +262,7 @@ hope.prototype = {
            this.assert(
                regexp.test(err.message),
                '希望 ' + inspect(regexp) + '匹配 错误信息' + inspect(err.message),
-               '希望 ' + inspect(regexp) + '不匹配 错误信息' + inspect(err.message),
+               '希望 ' + inspect(regexp) + '不匹配 错误信息' + inspect(err.message)
            )
            return this
         }
@@ -270,7 +270,7 @@ hope.prototype = {
             this.assert(
                 (new RegExp(regexp)).test(err.message),
                 '希望 ' + inspect(regexp) + '匹配 错误信息' + inspect(err.message),
-                '希望 ' + inspect(regexp) + '不匹配 错误信息' + inspect(err.message),
+                '希望 ' + inspect(regexp) + '不匹配 错误信息' + inspect(err.message)
             )
             return this
          }
@@ -318,7 +318,7 @@ hope.prototype = {
             this.assert(
                 this.ctressa === num,
                 '希望 '+ inspect(this.ctressa) + ' 相等于数字 ' + inspect(num),
-                '希望 '+ inspect(this.ctressa) + ' 不相等于数字 ' + inspect(num),
+                '希望 '+ inspect(this.ctressa) + ' 不相等于数字 ' + inspect(num)
             )
         }
     },
