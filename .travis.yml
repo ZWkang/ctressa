@@ -10,7 +10,7 @@ node_js:
   - '10'
 before_install:
   - npm install -g npm@latest
-  - npm install mocha@6.1.4
+  - npm install -g mocha
 install:
   - npm install
 script: npm run test:all
