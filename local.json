@@ -1,0 +1,13 @@
+{
+    "zh": {
+        "array": "不是期望的数组",
+        "detectFunction": "不是一个数组",
+        "notEqualName": "名字不一致",
+        "hope": "希望",
+        "empty": "为空",
+        "notempty": "不为空"
+    },
+    "en": {
+        "array": "is not expected array"
+    }
+}

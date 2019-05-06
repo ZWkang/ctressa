@@ -1,0 +1,29 @@
+{
+  "name": "ctressa",
+  "version": "1.0.0",
+  "description": "assert lib use chinese to wrote",
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "deep-equal": "^1.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZWkang/ctressa.git"
+  },
+  "author": "ZWkang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZWkang/ctressa/issues"
+  },
+  "homepage": "https://github.com/ZWkang/ctressa#readme",
+  "keywords": [
+    "test",
+    "assert"
+  ]
+}
