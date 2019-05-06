@@ -11,6 +11,8 @@
     "cross-env": "^5.2.0"
   },
   "scripts": {
+    "test:all": "cross-env NODE_ENV=test mocha ./test/*.test.js",
+    "test:helper": "cross-env NODE_ENV=test mocha ./test/Helper.test.js"
   },
   "repository": {
     "type": "git",
