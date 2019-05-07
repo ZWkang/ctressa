@@ -1,5 +1,4 @@
-var assert   = require('assert'),
-    uinspect = require('util').inspect,
+var uinspect = require('util').inspect,
     inherits = require('util').inherits,
     deepEql  = require('deep-equal'),
     version  = require('./package.json').version,
@@ -34,7 +33,6 @@ var 希望 = hope
 
 // like node core
 var AssertionError = function (options) {
-    // console.log(options)
     this.message = options.message || ''
     this.name = options.name || '[HOPE ERROR]\n',
     this.actual = options.actual;
@@ -171,7 +169,6 @@ hope.prototype = {
         var negate  = notUseNegate ? false : this.negate,
             ok      = negate ? !expr : expr,
             message = negate ? inverseMessage : message
-        // console.log(expr, negate, ok)
         if(!ok) {
             throw new AssertionError({
                 message: message,
@@ -183,19 +180,6 @@ hope.prototype = {
         }
 
     },
-    // haveName (name) {
-    //     if(Helper.isUndefined(name)) {
-    //         this.ctressa = this.ctressa.name
-    //         this.expected = this.expected.name
-    //     } else {
-    //         this.assert(
-    //             this.ctressa.name === name && this.expected.name === name,
-    //             '希望' + inspect(this.ctressa) + ' name and ' + inspect(this.expected) + ' name' + ' equal with '+ name,
-    //             '希望' + inspect(this.ctressa) + ' name and ' + inspect(this.expected) + ' name' + ' not equal with '+ name 
-    //         )
-    //     }
-    //     return this
-    // },
     haveKey (key) {
         var keys = Object.keys(this.ctressa)
         this.assert(
