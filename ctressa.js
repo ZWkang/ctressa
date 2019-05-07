@@ -34,7 +34,7 @@ var 希望 = hope
 // like node core
 var AssertionError = function (options) {
     this.message = options.message || ''
-    this.name = options.name || '[HOPE ERROR]\n',
+    this.name = options.name || '[HOPE ERROR]',
     this.actual = options.actual;
     this.expected = options.expected;
     this.operator = options.operator;
