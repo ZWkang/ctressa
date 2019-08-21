@@ -1,6 +1,6 @@
 {
   "name": "ctressa",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "assert lib use chinese to wrote",
   "main": "index.js",
   "dependencies": {
